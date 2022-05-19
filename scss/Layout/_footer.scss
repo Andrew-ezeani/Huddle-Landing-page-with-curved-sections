@@ -1,14 +1,13 @@
 .footer {
     max-width: 100%;
-    margin-top: 13rem;
+    margin-top: 20rem;
     height: auto;
     background: $neutral-color-dark-cyan;
     position: relative;
     padding: 5rem 2rem 4rem 2rem;
 
-
     @include responsive(phone) {
-        margin-top: 8rem;
+        margin-top: 18rem;
     }
     
     &__bg-image {            
@@ -52,7 +51,7 @@
     &__contact__box {
         display: flex;
         gap: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     &__social-media {

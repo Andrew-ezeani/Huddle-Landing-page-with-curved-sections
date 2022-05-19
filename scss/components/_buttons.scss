@@ -1,15 +1,17 @@
 .btn {
     padding: .5rem;
-    border-radius: 50px;    
-    text-transform: capitalize;
     width: 100%;
     @include flex-center;
+    font-weight: 600;
+    text-decoration: none;
 
     &--small {
         background: none;
         width: 10rem;
         height: 3rem;
         font-size: 1rem;
+        border-radius: 50px;
+        text-transform: capitalize;
         border: 2px solid $primary-color-pink;
         color: $primary-color-pink;
         cursor: pointer;
@@ -24,15 +26,16 @@
 
     &--big {
         border: none;
-        margin-top: 2rem;
-        margin-bottom: 5rem;
+        margin: 0 auto;
+        // margin-top: 2rem;
+        // margin-bottom: 5rem;
         width: 30%;
         height: 3.5rem;
         color: $neutral-color-pale-blue;
         background: $primary-color-pink;
         box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.3);
-        border-radius: inherit;
-        text-transform: inherit;
+        border-radius: 50px;
+        text-transform: capitalize;
         font-size: 1.2rem;
         cursor: pointer;
 
@@ -42,6 +45,8 @@
     }
 
     &__footer {
+        border: 2px solid red;
+        text-decoration: none;
         width: 25%;
         height: 2rem;
         @include border-style;

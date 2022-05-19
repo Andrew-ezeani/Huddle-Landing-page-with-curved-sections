@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/main.css">
     <title>Huddle Landing page || frontendmentor challenge</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__navigation">
-            <img src="images/logo.svg" alt="" class="header__logo">
-            <button class="btn btn--small">
+    <div class="navigation">
+        <div class="navigation__box">
+            <a href="#"><img src="images/logo.svg" alt="" class="navigation__logo"></a> 
+            <a href="#" class="btn btn--small">
                 try it free
-            </button>
+            </a>
             
             
         </div>
+    </div>
 
+    <header class="header">
         <div class="header__contents">
             <div class="header__text-box">
                 <h1 class="heading-primary">
@@ -29,24 +32,24 @@
                 </p>
                 
             </div>
-            <div class="btn">
-                <button class="btn--big">
+            <!-- <div class="btn"> -->
+                <a href="#" class="btn btn--big">
                     get started for free
-                </button>
-            </div>
+                </a>
+            <!-- </div> -->
             
             <div class="header__image-box">
-                <img src="images/screen-mockups.svg" alt="mockup" class="header__image-box__image">
+                <img src="images/screen-mockups.svg" alt="" class="header__image-box__image">
             </div>
             
 
             <div class="header__stats">
                 
                 <div class="header__stats-box">
-                    <img src="images/icon-communities.svg" alt="community icon" class="header__stats-box__image">
+                    <img src="images/icon-communities.svg" alt="" class="header__stats-box__image">
                     <div class="header__stats-box__text-box">
                         <h3 class="heading-tertiary">
-                            1.4k<span class="heading-tertiary--span">+</span>
+                            1.4k+
                         </h3>
                         <p class="heading-tertiary__sub">
                             communities formed
@@ -56,10 +59,10 @@
                 </div>
 
                 <div class="header__stats-box">
-                    <img src="images/icon-messages.svg" alt="message icon" class="header__stats-box__image">
+                    <img src="images/icon-messages.svg" alt="" class="header__stats-box__image">
                     <div class="header__stats-box__text-box">
                         <h3 class="heading-tertiary">
-                            2.7m<span>+</span>
+                            2.7m+
                         </h3>
                         <p class="heading-tertiary__sub">
                             messages sent
@@ -69,8 +72,9 @@
                 </div>
             </div>
         </div>
-    </header>
 
+    </header>
+        
     <main>
 
         <section class="features features--1 ">
@@ -80,7 +84,7 @@
                    media="(max-width: 375px)"
                    srcset="images/bg-section-top-mobile-1.svg">
                 <img src="images/bg-section-top-desktop-1.svg"
-                 alt="background image" class="features--1__bg-image">
+                 alt="" class="features--1__bg-image">
             </picture>
 
             <div class="features__box features--1__box">
@@ -100,7 +104,7 @@
                    media="(max-width: 375px)"
                    srcset="images/bg-section-bottom-mobile-1.svg">
                 <img src="images/bg-section-bottom-desktop-1.svg"
-                 alt="a cute kitten" class="features--1__bg-image--bottom">
+                 alt="" class="features--1__bg-image--bottom">
             </picture>
         
         </section>
@@ -109,7 +113,7 @@
 
             <div class="features__box">
                 <img src="images/illustration-flowing-conversation.svg" alt="" class="features__image">
-                <div class="features__text-box">
+                <div class="features__text-box features--2__text-box">
                     <h2 class="heading-secondary">
                         flowing conversations
                     </h2>
@@ -127,7 +131,7 @@
                    media="(max-width: 375px)"
                    srcset="images/bg-section-top-mobile-2.svg">
                 <img src="images/bg-section-top-desktop-2.svg"
-                 alt="background image" class="features--3__bg-image">
+                 alt="" class="features--3__bg-image">
             </picture>
 
             <div class="features__box features--3__box">
@@ -147,7 +151,7 @@
                    media="(max-width: 375px)"
                    srcset="images/bg-section-bottom-mobile-2.svg">
                 <img src="images/bg-section-bottom-desktop-2.svg"
-                 alt="a cute kitten" class="features--3__bg-image--bottom">
+                 alt="" class="features--3__bg-image--bottom">
             </picture>
         </section>
     
@@ -155,11 +159,9 @@
             <h2 class="heading-primary">
                 ready to build your community?
             </h2>
-            <div class="btn">
-                <button class="btn btn--big btn-width">
+                <a href="#" class="btn btn--big">
                     get started for free
-                </button>
-            </div>
+                </a>
         </section>
     
     </main>
@@ -171,7 +173,7 @@
                media="(max-width: 375px)"
                srcset="images/bg-footer-top-mobile.svg">
             <img src="images/bg-footer-top-desktop.svg"
-             alt="background image" class="footer__bg-image">
+             alt="" class="footer__bg-image">
         </picture>
 
         <div class="footer__box">
@@ -209,7 +211,7 @@
                 <div class="form">
                     <label for="email"></label>
                     <input type="email" name="email" id="email" class="form__input" placeholder="john@gmail.com" required>
-                    <button class="btn__footer">Subscribe</button>
+                    <a href="#" ><button class="btn__footer">Subscribe</button> </a>
                     <p class="form__input__error">Check your email address</p>
                 </div>
             </section>
