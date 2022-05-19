@@ -15,7 +15,9 @@
         cursor: pointer;
 
         @include responsive(phone) {
-            height: 2.5rem;
+            height: 3.2rem;
+            width: 12rem;
+            font-size: 1.2rem;
         }
         
     }
