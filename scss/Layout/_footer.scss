@@ -1,0 +1,92 @@
+.footer {
+    max-width: 100%;
+    margin-top: 13rem;
+    height: auto;
+    background: $neutral-color-dark-cyan;
+    position: relative;
+    padding: 5rem 2rem 4rem 2rem;
+
+
+    @include responsive(phone) {
+        margin-top: 8rem;
+    }
+    
+    &__bg-image {            
+        @include top-right-position;
+
+        @include responsive(phone) {
+            margin-top: -5rem;
+        }
+    }
+
+    &__box {
+        @include space-between;
+        color: lighten($neutral-color-pale-blue, 0.2);
+
+        @include responsive(phone) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 10rem;
+        }
+
+        &--1 {
+            margin-left: 6rem;
+
+            @include responsive(phone) {
+                margin-left: 0;
+            }
+        }
+
+        &__logo {
+            height: 5vh;
+            margin-bottom: 1rem;
+            filter: brightness(0) saturate(100%) invert(97%) sepia(100%) saturate(0%) hue-rotate(48deg) brightness(102%) contrast(102%);
+
+            @include responsive(phone) {
+                height: 3.2rem;
+            }
+        }
+    }
+
+    &__contact__box {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__social-media {
+        margin: 3rem 0 0 6rem;
+        display: flex;
+
+        @include responsive(phone) {
+            margin: 3rem 0;
+        }
+
+        &__icon {
+            color: $neutral-color-pale-blue;
+
+            &:hover {
+                color: skyblue;
+            }
+        }
+        
+
+        .fa-brands {
+            font-size: 1.7rem;
+            margin-right: 1.2rem;
+
+            @include responsive(phone) {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    @include responsive(phone) {
+        &__newsletter {
+            grid-row: 1/2;
+            text-align: left;
+        }
+    }   
+}

@@ -1,0 +1,58 @@
+.btn {
+    padding: .5rem;
+    border-radius: 50px;    
+    text-transform: capitalize;
+    width: 100%;
+    @include flex-center;
+
+    &--small {
+        background: none;
+        width: 10rem;
+        height: 3rem;
+        font-size: 1rem;
+        border: 2px solid $primary-color-pink;
+        color: $primary-color-pink;
+        cursor: pointer;
+
+        @include responsive(phone) {
+            height: 2.5rem;
+        }
+        
+    }
+
+    &--big {
+        border: none;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        width: 30%;
+        height: 3.5rem;
+        color: $neutral-color-pale-blue;
+        background: $primary-color-pink;
+        box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.3);
+        border-radius: inherit;
+        text-transform: inherit;
+        font-size: 1.2rem;
+        cursor: pointer;
+
+        @include responsive(phone) {
+            width: 50%;
+        }
+    }
+
+    &__footer {
+        width: 25%;
+        height: 2rem;
+        @include border-style;
+        background: $primary-color-pink;
+        color: $neutral-color-pale-blue;
+        cursor: pointer;
+
+        @include responsive(phone) {
+            float: right;
+            height: 3rem;
+            width: 40%;
+        }
+    }
+    
+}
+
